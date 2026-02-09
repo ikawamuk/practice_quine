@@ -28,7 +28,6 @@ int main(int argc, char *argv[])
     int fd = mkstemps(fn, 2);
     FILE *fp = fdopen(fd, "w");
 
-    /* fprintfの引数の順番をs内の%cと完全に一致させています */
     fprintf(fp, s, 
         10, 10, 10, 10,     /* header */
         34, 34,             /* count ベースケース*/
